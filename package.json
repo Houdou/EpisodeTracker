@@ -1,0 +1,50 @@
+{
+	"name": "EpisodeTracker",
+	"version": "0.1.0",
+	"description": "What's the next episode?",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/houdou/EpisodeTracker.git"
+	},
+	"keywords": [
+		"NativeScript",
+		"Angular2",
+		"Anime"
+	],
+	"author": "Houdou <houdou.pt@gmail.com> (http://towa.moe)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/houdou/EpisodeTracker/issues"
+	},
+	"homepage": "https://github.com/houdou/EpisodeTracker",
+	"nativescript": {
+		"id": "moe.towa.EpisodeTracker",
+		"tns-android": {
+			"version": "2.2.0-next-2016-07-05-837"
+		},
+		"tns-ios": {
+			"version": "2.1.1"
+		}
+	},
+	"dependencies": {
+		"@angular/common": "2.0.0-rc.4",
+		"@angular/compiler": "2.0.0-rc.4",
+		"@angular/core": "2.0.0-rc.4",
+		"@angular/http": "2.0.0-rc.4",
+		"@angular/platform-browser": "2.0.0-rc.4",
+		"@angular/platform-browser-dynamic": "2.0.0-rc.4",
+		"@angular/platform-server": "2.0.0-rc.4",
+		"@angular/router": "3.0.0-beta.2",
+		"nativescript-angular": "0.2.0",
+		"tns-core-modules": "2.2.0-2016-07-21-3778"
+	},
+	"devDependencies": {
+		"babel-traverse": "6.7.6",
+		"babel-types": "6.7.7",
+		"babylon": "6.7.0",
+		"filewalker": "0.1.2",
+		"lazy": "1.0.11",
+		"nativescript-dev-typescript": "^0.3.2",
+		"typescript": "^1.8.10"
+	}
+}
