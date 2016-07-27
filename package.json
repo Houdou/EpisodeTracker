@@ -11,14 +11,14 @@
 		"Angular2",
 		"Anime"
 	],
-	"author": "Houdou <houdou.pt@gmail.com> (http://towa.moe)",
+	"author": "Houdou <admin@towa.moe> (http://towa.moe), logchan <logchan@logu.co> (https://logu.co/)",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/houdou/EpisodeTracker/issues"
 	},
 	"homepage": "https://github.com/houdou/EpisodeTracker",
 	"nativescript": {
-		"id": "moe.towa.EpisodeTracker",
+		"id": "pw.puera.EpisodeTracker",
 		"tns-android": {
 			"version": "2.2.0-next-2016-07-05-837"
 		},

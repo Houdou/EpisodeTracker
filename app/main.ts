@@ -1,4 +1,4 @@
 import {nativeScriptBootstrap} from "nativescript-angular/application";
 import {EpiMain} from "./epi.main";
 
-nativeScriptBootstrap(EpiMain);
+nativeScriptBootstrap(EpiMain, [], {"cssFile": 'epi.css'});
