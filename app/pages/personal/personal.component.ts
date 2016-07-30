@@ -8,7 +8,7 @@ import { PersonalListBangumiComponent } from './personal.bangumi.component';
 	template: `
 	<ListView [items]="list">
 		<template let-item="item" let-odd="odd" let-even="even">
-			<epi-list-bangumi></epi-list-bangumi>
+			<epi-list-bangumi [bangumi]="item"></epi-list-bangumi>
 		</template>
 	</ListView>
 	`,
@@ -17,9 +17,9 @@ import { PersonalListBangumiComponent } from './personal.bangumi.component';
 	]
 })
 export class EpiPersonalList {
-	public list: Array<string> = [];
+	public list: Array<Bangumi> = [];
 
 	constructor() {
-		this.list.push('16N01');
+		this.list.push(new Bangumi('New Game', 'newgame.jpg'), new Bangumi('リライト', 'rewrite.jpg'));
 	}
 }

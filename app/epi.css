@@ -1,1 +1,5 @@
 @import url("~/platform.css");
+
+* {
+    font-family: "YuGothic-Regular";
+}
