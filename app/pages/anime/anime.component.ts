@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 
 import { Bangumi } from '../../shared/bangumi/bangumi';
-import { HomeBangumiComponent } from './home.bangumi.component';
+import { AnimeListBangumiComponent } from './anime.bangumi.component';
 
 @Component({
-	selector: 'epi-home',
+	selector: 'epi-anime',
 	template: `
 	<ListView [items]="list">
 		<template let-item="item" let-odd="odd" let-even="even">
-			<epi-home-bangumi [bangumi]="item"></epi-home-bangumi>
+			<epi-anime-bangumi [bangumi]="item"></epi-anime-bangumi>
 		</template>
 	</ListView>
 	`,
 	directives: [
-		HomeBangumiComponent
+		AnimeListBangumiComponent
 	]
 })
-export class EpiHome {
+export class EpiAnimeList {
 	public list: Array<Bangumi> = [];
 
 	constructor() {

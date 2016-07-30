@@ -1,47 +1,30 @@
 import { Component } from "@angular/core";
 
-import { EpiHome } from './pages/home/home.component';
+import { EpiAnimeList } from './pages/anime/anime.component';
+import { EpiPersonalList } from './pages/personal/personal.component';
+import { EpiSettingsList } from './pages/settings/settings.component';
 
 @Component({
 	selector: "epi",
 	template: `
 		<TabView #tabView>
 			<GridLayout *tabItem="{title: 'List'}">
-			<ListView [items]="source2">
-				<template let-item="item" let-odd="odd" let-even="even">
-					<Label text="ListItem" textWrap="true"></Label>
-				</template>
-			</ListView>
+				<epi-list></epi-list>
 			</GridLayout>
 			<GridLayout *tabItem="{title: 'Home'}">
-				<epi-home></epi-home>
+				<epi-anime></epi-anime>
 			</GridLayout>
 			<GridLayout *tabItem="{title: 'Settings'}">
-			<ListView [items]="source3">
-				<template let-item="item" let-odd="odd" let-even="even">
-					<Label text="SettingsItem" textWrap="true"></Label>
-				</template>
-			</ListView>
+			 	<epi-settings></epi-settings>
 			</GridLayout>
 		</TabView>
 	`,
 	directives: [
-		EpiHome
+		EpiAnimeList,
+		EpiPersonalList,
+		EpiSettingsList
 	]
 })
 export class EpiMain {
-	source2 = ["Item"];
-	source3 = ["Item"];
 
-	onLoaded(event) {
-
-	}
-
-	onItemLoaded(event) {
-
-	}
-
-	onItemTap(event) {
-
-	}
 }

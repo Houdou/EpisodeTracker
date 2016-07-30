@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Bangumi } from '../../shared/bangumi/bangumi';
 
 @Component({
-	selector: 'epi-home-bangumi',
+	selector: 'epi-anime-bangumi',
 	template: `
 		<GridLayout rows="30, 60" columns="90, *, *" cssClass="bangumi-item">
 			<Image row="0" rowSpan="2" col="0"
@@ -34,7 +34,7 @@ import { Bangumi } from '../../shared/bangumi/bangumi';
 		'bangumi'
 	]
 })
-export class HomeBangumiComponent{
+export class AnimeListBangumiComponent{
 	private _bangumi: Bangumi;
 	get bangumi() {
 		return this._bangumi;
