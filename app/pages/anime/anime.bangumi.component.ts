@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 
+import view = require('ui/core/view');
+
 import { Bangumi } from '../../shared/bangumi/bangumi';
 
 @Component({
@@ -87,7 +89,7 @@ import { Bangumi } from '../../shared/bangumi/bangumi';
 		'bangumi'
 	]
 })
-export class AnimeListBangumiComponent{
+export class AnimeListBangumiComponent extends view.View {
 	private _bangumi: Bangumi;
 	get bangumi() {
 		return this._bangumi;
